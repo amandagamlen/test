@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>three js project</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js">
+  </script>
+  <title>ime.</title>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+<!-- <div class="close">
+    <a href="/ime.html"></a>
+    <div class="lr">
+        <div class="rl"></div>
+    </div> -->
+      <script>
+           $(function() {
+               $('body').click(function(e) {
+                   e.preventDefault();
+                   var destination = 'ime.html';
+                   $('body').fadeOut(2000, function() {
+                       window.location = destination;
+                   });
+               });
+               return false;
+           });
+      </script>
+  <script type="module" src="main.js"></script>
 </body>
-
 </html>
